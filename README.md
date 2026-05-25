@@ -1,6 +1,6 @@
 # Python Rate Limiter
 
-![Tests](https://github.com/kayque-silva/python-rate-limiter/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/KayqueCavalcanti/python-rate-limiter/actions/workflows/tests.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Zero dependencies](https://img.shields.io/badge/core%20dependencies-zero-brightgreen)
@@ -246,7 +246,7 @@ IPs that don't share requests never contend — no global serialisation.
 
 ```bash
 # Clone and enter the project
-git clone https://github.com/kayque-silva/python-rate-limiter.git
+git clone https://github.com/KayqueCavalcanti/python-rate-limiter.git
 cd python-rate-limiter
 
 # Install dependencies
@@ -465,4 +465,4 @@ A single global lock serialises all requests regardless of origin. With per-IP l
 
 ## License
 
-[MIT](LICENSE) — Kayque Silva, 2026
+[MIT](LICENSE) — [KayqueCavalcanti](https://github.com/KayqueCavalcanti), 2026

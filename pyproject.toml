@@ -19,8 +19,8 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/kayque-silva/python-rate-limiter"
-Issues     = "https://github.com/kayque-silva/python-rate-limiter/issues"
+Repository = "https://github.com/KayqueCavalcanti/python-rate-limiter"
+Issues     = "https://github.com/KayqueCavalcanti/python-rate-limiter/issues"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
