@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python demo.py)",
+      "Bash(pip install *)",
+      "Bash(python server.py)",
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(Invoke-WebRequest -Uri http://localhost:5000/api/hello -UseBasicParsing)",
+      "Bash(Select-Object StatusCode, Headers, Content)",
+      "PowerShell(Invoke-WebRequest -Uri http://localhost:5000/api/hello -UseBasicParsing)",
+      "PowerShell(cd c:\\\\python-rate-limiter; Start-Process -FilePath \"python\" -ArgumentList \"server.py\" -NoNewWindow -PassThru; Start-Sleep -Seconds 3; try { Invoke-WebRequest -Uri http://localhost:5000/api/hello -UseBasicParsing } catch { $_.Exception.Message })"
+    ]
+  }
+}

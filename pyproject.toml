@@ -1,0 +1,38 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "python-rate-limiter"
+version     = "1.0.0"
+description = "SRE-grade Rate Limiting Middleware - Sliding Window Log algorithm"
+requires-python = ">=3.10"
+keywords    = ["rate-limiting", "middleware", "sre", "ddos-protection", "wsgi", "flask"]
+dependencies = [
+    "flask>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
+
+[project.urls]
+Repository = "https://github.com/kayque-silva/python-rate-limiter"
+Issues     = "https://github.com/kayque-silva/python-rate-limiter/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts   = "-v --tb=short"
+markers   = [
+    "slow: tests that rely on time.sleep and run longer than 1 s",
+]
+
+[tool.coverage.run]
+source = ["rate_limiter", "middleware"]
+omit   = ["tests/*", "demo.py", "server.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty   = true

@@ -1,0 +1,5 @@
+# Rate Limiter — dependências
+# Núcleo (rate_limiter.py + middleware.py): stdlib pura, zero dependências.
+# Dependências abaixo são opcionais para o servidor de exemplo Flask.
+
+flask>=3.0          # servidor HTTP de exemplo (opcional)
